@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>My Project: Plik źródłowy projekt/cl.py</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('cl_8py_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">cl.py</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="cl_8py.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="code" href="namespacecl.html">    1</a></span>&#160;<span class="keyword">import</span> socket, pygame,cPickle,sys,os,select,time</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">from</span> protocolObjects <span class="keyword">import</span> *</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">from</span> <a class="code" href="namespacepygame_1_1locals.html">pygame.locals</a> <span class="keyword">import</span> * </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">from</span> twisted.internet.protocol <span class="keyword">import</span> Protocol, ClientFactory</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="code" href="namespacecl.html#af1e24fcd428d448e22114f54155a727e">    5</a></span>&#160;clock = pygame.time.Clock()</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="classcl_1_1_c_p.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="classcl_1_1_c_p.html">CP</a>(Protocol):</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="code" href="classcl_1_1_c_p.html#a055d998a9490a4a71c55356f3aae503d">    8</a></span>&#160;        <span class="keyword">def </span><a class="code" href="classcl_1_1_c_p.html#a055d998a9490a4a71c55356f3aae503d">__init__</a>(self):</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="code" href="classcl_1_1_c_p.html#a5151cb590fea0bb3b96e34b01448cdb2">   11</a></span>&#160;        <span class="keyword">def </span><a class="code" href="classcl_1_1_c_p.html#a5151cb590fea0bb3b96e34b01448cdb2">connectionMade</a>(self):</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                self.factory.SConnectionMade(self)</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="classcl_1_1_c_p.html#aebaaf21f884b2a37c376982c3417bd23">   14</a></span>&#160;        <span class="keyword">def </span><a class="code" href="classcl_1_1_c_p.html#aebaaf21f884b2a37c376982c3417bd23">dataReceived</a>(self, data):</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                data = cPickle.loads(data)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                clock.tick(20)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <span class="keywordflow">if</span> isinstance(data,Countdown):</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                        <span class="keywordflow">if</span> data.number == 3:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                self.factory.Run(data)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                        self.factory.RunC(data) </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                        pygame.display.update() </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="keywordflow">elif</span> isinstance(data, Map):</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                        self.factory.Update(data)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                        self.factory.Send()</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                        pygame.display.update()</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <span class="keywordflow">elif</span> isinstance(data, Result):</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                        self.factory.CFResult(data)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                        <span class="keywordflow">print</span> data</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                        </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="classcl_1_1_c_p.html#ab9ed6704f0f3dbd526f1c97f5109b5d0">   31</a></span>&#160;        <span class="keyword">def </span><a class="code" href="classcl_1_1_c_p.html#ab9ed6704f0f3dbd526f1c97f5109b5d0">connectionLost</a>(self, reason):</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                pygame.quit()</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="classcl_1_1_c_p.html#ae42613f36ee4cfdab42ed03e85517c98">   33</a></span>&#160;                self.<a class="code" href="classcl_1_1_c_p.html#ae42613f36ee4cfdab42ed03e85517c98">go</a> = <span class="keyword">False</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                reactor.callLater(5,reactor.stop)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="classcl_1_1_c_f.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="classcl_1_1_c_f.html">CF</a>(ClientFactory):</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="classcl_1_1_c_f.html#a2d207aa8fe8bd4f92d8139e0836e5aea">   37</a></span>&#160;        protocol = CP</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="classcl_1_1_c_f.html#abfcc7745f03bb92b25c3fc0b77c9297c">   39</a></span>&#160;        <span class="keyword">def </span><a class="code" href="classcl_1_1_c_f.html#abfcc7745f03bb92b25c3fc0b77c9297c">__init__</a>(self):</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="keywordflow">pass</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="classcl_1_1_c_f.html#a63e9ae3b651e00bf577de6d921584840">   42</a></span>&#160;        <span class="keyword">def </span><a class="code" href="classcl_1_1_c_f.html#a63e9ae3b651e00bf577de6d921584840">SConnectionMade</a>(self,s):</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="classcl_1_1_c_f.html#ad9090bc6d84576860ec426226abca492">   43</a></span>&#160;                self.<a class="code" href="classcl_1_1_c_f.html#ad9090bc6d84576860ec426226abca492">server</a> = s</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="classcl_1_1_c_f.html#a5f9a5ff66080bce24827496ff7932c8e">   45</a></span>&#160;        <span class="keyword">def </span><a class="code" href="classcl_1_1_c_f.html#a5f9a5ff66080bce24827496ff7932c8e">Run</a>(self,data):</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="classcl_1_1_c_f.html#a7e1b609214c9762efe071d0aecb01fa4">   46</a></span>&#160;                self.<a class="code" href="classcl_1_1_c_f.html#a7e1b609214c9762efe071d0aecb01fa4">run</a> = <a class="code" href="classcl_1_1_game.html">Game</a>(data.mapSize,data.playerId)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                self.run.initGame(data)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="classcl_1_1_c_f.html#aaf33f9a0a0045695452898edcf047398">   49</a></span>&#160;        <span class="keyword">def </span><a class="code" href="classcl_1_1_c_f.html#aaf33f9a0a0045695452898edcf047398">RunC</a>(self, data):</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                self.run.Count(data)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="classcl_1_1_c_f.html#a01310fe7a33bf02d303c9444f79cd064">   52</a></span>&#160;        <span class="keyword">def </span><a class="code" href="classcl_1_1_c_f.html#a01310fe7a33bf02d303c9444f79cd064">Update</a>(self,data):</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                self.run.UpdateScr(data)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="classcl_1_1_c_f.html#aa0a39f364fe463119a525a1b78cb36d1">   55</a></span>&#160;        <span class="keyword">def </span><a class="code" href="classcl_1_1_c_f.html#aa0a39f364fe463119a525a1b78cb36d1">Send</a>(self):</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                a = self.run.Akcja()</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                b = cPickle.dumps(a)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                self.server.transport.write(b)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="classcl_1_1_c_f.html#a739bc7de927615bb9d491a877ba31e8d">   60</a></span>&#160;        <span class="keyword">def </span><a class="code" href="classcl_1_1_c_f.html#a739bc7de927615bb9d491a877ba31e8d">CFResult</a>(self,data):</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                self.run.PR(data)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="classcl_1_1_game.html">   63</a></span>&#160;<span class="keyword">class </span><a class="code" href="classcl_1_1_game.html">Game</a>(object):</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="classcl_1_1_game.html#a2bb6cf5b86cca0299b01ecd606c24cbd">   64</a></span>&#160;        <span class="keyword">def </span><a class="code" href="classcl_1_1_game.html#a2bb6cf5b86cca0299b01ecd606c24cbd">__init__</a>(self,mapSize,playerId):</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                pygame.init()</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="classcl_1_1_game.html#a4399db61699ea8fbc03eca120188c20b">   66</a></span>&#160;        <span class="keyword">def </span><a class="code" href="classcl_1_1_game.html#a4399db61699ea8fbc03eca120188c20b">PR</a>(self,data):</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                tekst = self.font.render(<span class="stringliteral">&#39;Koniec&#39;</span>,<span class="keyword">True</span>, (30,100,200))</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                tekst2 = self.font.render(<span class="stringliteral">&#39;Wygral gracz: &#39;</span> + str(data.winners + 1), <span class="keyword">True</span>, (0,0,0))</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                tekst3 = self.font.render(<span class="stringliteral">&#39;Wynik: &#39;</span> + str(data.scores), <span class="keyword">True</span>, (0,0,0))</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                self.screen.fill((250,250,250))</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                self.screen.blit(tekst,(50,50))</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                self.screen.blit(tekst2,(50,200))</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                self.screen.blit(tekst3,(50,300))</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                pygame.display.update()</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                time.sleep(5)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                pygame.quit()</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="classcl_1_1_game.html#a87ce109f1a0dc9ac2c0893b9a9120cef">   78</a></span>&#160;        <span class="keyword">def </span><a class="code" href="classcl_1_1_game.html#a87ce109f1a0dc9ac2c0893b9a9120cef">Count</a>(self, data):</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                tekst = self.font.render(str(data.number),<span class="keyword">True</span>, (0,0,0))</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                self.screen.fill((250,250,250))</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                self.screen.blit(tekst, (300,200))</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="code" href="classcl_1_1_game.html#a15432c49696320cabfe227494560e7a2">   83</a></span>&#160;        <span class="keyword">def </span><a class="code" href="classcl_1_1_game.html#a15432c49696320cabfe227494560e7a2">Draw</a>(self,scr,i,pos):</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                i += 1</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                obr = <span class="stringliteral">&#39;gr&#39;</span> + str(i) + <span class="stringliteral">&#39;.png&#39;</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                os = pygame.image.load(obr).convert_alpha()</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                scr.blit(os, pos)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                   </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="classcl_1_1_game.html#a0d9ea78e389de4299d613ad072146973">   90</a></span>&#160;        <span class="keyword">def </span><a class="code" href="classcl_1_1_game.html#a0d9ea78e389de4299d613ad072146973">initGame</a>(self,data):</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                pygame.init()</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="code" href="classcl_1_1_game.html#abc2340137052cb56931a184f9060de98">   92</a></span>&#160;                self.<a class="code" href="classcl_1_1_game.html#abc2340137052cb56931a184f9060de98">screen</a> = pygame.display.set_mode((data.mapSize[0], data.mapSize[1]))</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="classcl_1_1_game.html#ac64d737adc796dc9622999cf10fa1a00">   93</a></span>&#160;                self.<a class="code" href="classcl_1_1_game.html#ac64d737adc796dc9622999cf10fa1a00">ID</a> = data.playerId</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                pygame.display.set_caption(<span class="stringliteral">&quot;Gracz &quot;</span> + str(self.<a class="code" href="classcl_1_1_game.html#ac64d737adc796dc9622999cf10fa1a00">ID</a> + 1))</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="code" href="classcl_1_1_game.html#a947838a90a41d44ab9461f9251739630">   95</a></span>&#160;                self.<a class="code" href="classcl_1_1_game.html#a947838a90a41d44ab9461f9251739630">font</a> = pygame.font.Font(<span class="stringliteral">&quot;CatShop.ttf&quot;</span>, 72)</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="code" href="classcl_1_1_game.html#a03b2d178f5735d655dfb7af21811c2c6">   96</a></span>&#160;                self.<a class="code" href="classcl_1_1_game.html#a03b2d178f5735d655dfb7af21811c2c6">warstwa</a> = pygame.image.load(<span class="stringliteral">&#39;plik.jpg&#39;</span>).convert_alpha()</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="code" href="classcl_1_1_game.html#a7f1d95034e3a69e9a24903a1d4bbb274">   97</a></span>&#160;                self.<a class="code" href="classcl_1_1_game.html#a7f1d95034e3a69e9a24903a1d4bbb274">b</a> = pygame.image.load(<span class="stringliteral">&#39;mina.png&#39;</span>).convert_alpha()</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="code" href="classcl_1_1_game.html#a343101f7134036a98a13dfd43eae3ca8">   99</a></span>&#160;        <span class="keyword">def </span><a class="code" href="classcl_1_1_game.html#a343101f7134036a98a13dfd43eae3ca8">UpdateScr</a>(self, data):</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                self.<a class="code" href="classcl_1_1_game.html#a03b2d178f5735d655dfb7af21811c2c6">warstwa</a> = pygame.image.load(<span class="stringliteral">&#39;plik.jpg&#39;</span>).convert_alpha()</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                self.<a class="code" href="classcl_1_1_game.html#a7f1d95034e3a69e9a24903a1d4bbb274">b</a> = pygame.image.load(<span class="stringliteral">&#39;mina.png&#39;</span>).convert_alpha()</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <span class="keywordflow">for</span> i <span class="keywordflow">in</span> data.mines:</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                        self.warstwa.blit(self.<a class="code" href="classcl_1_1_game.html#a7f1d95034e3a69e9a24903a1d4bbb274">b</a>, i.position)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                <span class="keywordflow">for</span> i, pos <span class="keywordflow">in</span> enumerate( data.playersPositions ):</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                        self.<a class="code" href="classcl_1_1_game.html#a15432c49696320cabfe227494560e7a2">Draw</a>(self.<a class="code" href="classcl_1_1_game.html#a03b2d178f5735d655dfb7af21811c2c6">warstwa</a>,i,(pos.x,pos.y))</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                self.screen.blit(self.<a class="code" href="classcl_1_1_game.html#a03b2d178f5735d655dfb7af21811c2c6">warstwa</a>, (0,0))</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="code" href="classcl_1_1_game.html#afe9cb062841a2d03d7f34ea803765442">  108</a></span>&#160;        <span class="keyword">def </span><a class="code" href="classcl_1_1_game.html#afe9cb062841a2d03d7f34ea803765442">Akcja</a>(self):</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                pressed_keys = pygame.key.get_pressed()</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="keywordflow">for</span> event <span class="keywordflow">in</span> pygame.event.get():</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                        <span class="keywordflow">if</span> event.type == QUIT:</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                                pygame.quit()</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keywordflow">if</span> pressed_keys[K_LEFT]:</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                        PlayerAction.action = <span class="stringliteral">&#39;left&#39;</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">elif</span> pressed_keys[K_RIGHT] :</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                        PlayerAction.action = <span class="stringliteral">&#39;right&#39;</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="keywordflow">elif</span> pressed_keys[K_UP]:</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                        PlayerAction.action = <span class="stringliteral">&#39;up&#39;</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <span class="keywordflow">elif</span> pressed_keys[K_DOWN]:</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                        PlayerAction.action = <span class="stringliteral">&#39;down&#39;</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <span class="keywordflow">elif</span> pressed_keys[K_LCTRL]:</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                        PlayerAction.action = <span class="stringliteral">&#39;result&#39;</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="keywordflow">elif</span> pressed_keys[K_SPACE]:</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                        PlayerAction.action = <span class="stringliteral">&#39;bomb&#39;</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                        PlayerAction.action = <span class="stringliteral">&#39;none&#39;</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <span class="keywordflow">return</span> PlayerAction.action</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">from</span> twisted.internet <span class="keyword">import</span> reactor</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;reactor.connectTCP(<span class="stringliteral">&#39;localhost&#39;</span>,8001, <a class="code" href="classcl_1_1_c_f.html">CF</a>())</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;reactor.run()</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_1f93d54fad99c643cd6a135dfed94bed.html">projekt</a></li><li class="navelem"><a class="el" href="cl_8py.html">cl.py</a></li>
+    <li class="footer">Wygenerowano Pt, 31 maj 2013 04:05:31 dla My Project programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>
